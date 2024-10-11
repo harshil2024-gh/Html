@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=|, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body bgcolor="cyan">
+    <form>
+        <fieldset>
+            <legend align="center">Sign up</legend>
+            <table align="center">
+                <tr>
+                    <td>Name</td>
+                    <td><Input type="text" minlength="3" maxlength="10" required placeholder="Enter Name" name="fname"
+                            value="username"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><Input type="password" name="pwd"></td>
+                </tr>
+                <tr>
+                    <td><Input type="submit"></td>
+                    <td><Input type="reset"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td><label><input type="radio" name="gender" value="male">male</label>
+                        <label><input type="radio" name="gender" value="female">female</label>
+                        <label><input type="radio" name="gender" value="Other">Other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Subject</td>
+                    <td><label><input type="checkbox" name="sub" value="FSD">FSD</label>
+                        <label><input type="checkbox" name="sub" value="Python">Python</label>
+                        <label><input type="checkbox" name="sub" value="DE">DE</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td>0<input type="range" min="0" max="1000" oninput="this.value=num.value">1000
+                        <input type="text" disabled id="num">
+
+                    </td>
+                </tr>
+                <tr>
+                    <input type="file" multiple>
+                </tr>
+                <tr>
+                    <input type="search" value="q">
+                </tr>
+                <tr>
+                    <td> <input type="image"
+                            src="https://static.vecteezy.com/system/resources/thumbnails/005/227/489/small/feedback-concept-rank-level-of-satisfaction-rating-excellent-good-normal-bad-awful-feedback-in-form-of-emotions-smileys-emoji-user-experience-review-of-consumer-vector.jpg"
+                            height="50" width="50"></td>
+                </tr>
+                <td>
+                    <input type="date" min="2024-11-10">
+                </td>
+                <select>
+                    <option>Ahemdabad</option>
+                    <option>Ghandhinagar</option>
+                    <option>Rajkot</option>
+                    <option>Bhavnagar</option>
+                </select>
+                <select>
+                    <option selected hidden>Select Area</option>
+                    <optgroup label="Ahemdabad">
+                        <option>Maninagar</option>
+                        <option>Bopal</option>
+                        <option>ranip</option>
+                    </optgroup>
+                    <optgroup label="ghandhinagar">
+                        <option>infocity</option>
+                        <option>kudasan</option>
+                        <option>Adalaj</option>
+                    </optgroup>
+
+                </select>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>
